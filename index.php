@@ -69,13 +69,14 @@ $hotels = [
 
 
 ?>
-    <header>
-        <h1 class="text-center">
-            Hotels
-        </h1>
+<header>
+    <h1 class="text-center">
+        Hotels
+    </h1>
 
-        <hr>
-    </header>
+    <hr>
+</header>
+
         <!-- 
             $hotels = 
             [
@@ -84,9 +85,23 @@ $hotels = [
             'parking' => true,
             'vote' => 4,
             'distance_to_center' => 10.4
-        ]
-        -->
+        ]-->
+<main>
 
+        <section class="form">
+            <h2>
+                Inserisci i dati:
+            </h2>
+
+            <!-- 1 - Aggiungere un form ad inizio pagina che tramite una richiesta GET permetta di filtrare gli hotel che hanno un parcheggio. -->
+
+            <form action="index.php" method="GET">
+                <label for="parking">Parcheggio: </label>
+                <input id="parking" type="text" name="parking">
+                <button type="submit">Invia</button>
+            </form>
+        </section>
+        
 
 </body>
 
