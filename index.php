@@ -101,6 +101,49 @@ $hotels = [
                 <button type="submit">Invia</button>
             </form>
         </section>
+
+        <section>
+            <h2 class="text-center">
+                Hotel disponibili:
+            </h2>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Descrizione</th>
+                        <th scope="col">Parcheggio</th>
+                        <th scope="col">Voto</th>
+                        <th scope="col">Distanza dal centro</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                <!-- 
+            $hotels = 
+            [
+            'name' => 'Hotel Belvedere',
+            'description' => 'Hotel Belvedere Descrizione',
+            'parking' => true,
+            'vote' => 4,
+            'distance_to_center' => 10.4
+        ]
+        -->
+                    <?php 
+                        foreach($hotels as $hotel) {
+                            echo "<tr>";
+                            echo "<td>" . $hotel['name'] . "</td>";
+                            echo "<td>" . $hotel['description'] . "</td>";
+                            echo "<td>" . (($hotel['parking']) ? 'si' : 'no') . "</td>";
+                            echo "<td>" . $hotel['vote'] . "</td>";
+                            echo "<td>" . $hotel['distance_to_center'] . " km </td>";
+                            echo "</tr>";
+                        }
+                    ?>
+                </tbody>
+            </table>
+
+        </section>
         
 
 </body>
