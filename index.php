@@ -56,7 +56,7 @@ $hotels = [
 
 ];
 
-                    //foreach($hotels as $key => $hotel){
+                //foreach($hotels as $key => $hotel){
                     //    echo "<div class='col-5 border border-secondary g-3 me-autod '>";
                     //    echo "<p>Nome: {$hotel['name']} </p>";
                      //   echo "<p>Descrizione: {$hotel['description']} </p>";
